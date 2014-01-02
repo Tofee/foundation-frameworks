@@ -34,11 +34,7 @@ var Err = exports.Err =
 
     _toFullString: function(e)
     {
-        if (e.stack)
-        {
-            return e.stack;
-        }
-        else if (e.message)
+        if (e.message)
         {
             return "Error: " + e.message;
         }
