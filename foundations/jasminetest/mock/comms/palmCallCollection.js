@@ -24,9 +24,7 @@
  * @constructor
  */
 
-var sys = require('sys');
-
-sys.puts("Loading PalmCallCollection mock ..");
+console.log("Loading PalmCallCollection mock ..");
 
 var PalmCallItem = function( _method, _rules) {
 	/**

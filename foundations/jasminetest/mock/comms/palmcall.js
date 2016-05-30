@@ -23,9 +23,8 @@
  * @uses PalmCallCollection
  * @module foundations
  */
-var sys = require('sys');
 
-sys.puts("Loading PalmCall mock ..");
+console.log("Loading PalmCall mock ..");
 var PalmCall = exports.Comms.PalmCall =
 {
 	/**

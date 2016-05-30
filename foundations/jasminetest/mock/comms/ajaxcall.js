@@ -26,12 +26,12 @@
  * @module foundations
  * @uses ajaxCallCollection
  */
-var sys = require('sys');
+
 var urlModule = require('url');
 var qs = require('querystring');
 var bufferModule = require('buffer');
 
-sys.puts("Loading PalmCall mock ..");
+console.log("Loading PalmCall mock ..");
 
 var AjaxCall = exports.Comms.AjaxCall = {
 	/**

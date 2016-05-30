@@ -22,11 +22,11 @@
  * @class DB
  * @module foundations
  */
-var sys = require('sys');
+
 var path = require('path');
 var fs = require('fs');
 
-sys.puts("Loading db mock module ..");
+console.log("Loading db mock module ..");
 
 var DB = exports.Data.DB = global.DB = {
 	_revision : 0,
