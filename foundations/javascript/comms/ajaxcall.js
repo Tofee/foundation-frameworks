@@ -435,7 +435,7 @@ var AjaxCall =
 				local_result.status = response.statusCode;
 				local_result.getResponseHeader = function(name) {
 					var lowerCaseName = name.toLowerCase();
-					if (lowerCaseName === 'set-cookie') {
+					if (lowerCaseName === 'set-cookie' && (Object.prototype.toString.call(response.headers['set-cookie']) === '[object Array]')) {
 						// set-cookie headers returned
 						// as an array so convert to
 						// comma-separated string
